@@ -7,6 +7,8 @@ const port = 3000;
 
 app.use(cors());
 
+app.use('/',express.static('public'));
+
 const budget = {
     myBudget: [
         {
@@ -25,9 +27,13 @@ const budget = {
 };
 
 
-app.get('/budget', (req, res) => {
+app.get('/', (req, res) => {
     res.json(budget);
 });
+
+app.get('/budget', (req, res) => {
+    res.json(budget);
+})
 
 app.listen(port, () => {
     console.log(`API served at http://localhost:${port}`);
