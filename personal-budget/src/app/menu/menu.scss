@@ -1,0 +1,36 @@
+nav {
+    width: 100%;
+    background-color: #4d5791;
+    height: 44px;
+    padding: 0 40px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    display: block;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover  {
+    background-color: #fff;
+    color: #4d5791;
+    border-radius: 6px;
+}
